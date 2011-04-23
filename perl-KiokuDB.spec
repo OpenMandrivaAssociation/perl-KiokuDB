@@ -42,6 +42,7 @@ BuildRequires: perl(Tie::ToObject)
 BuildRequires: perl(Try::Tiny)
 BuildRequires: perl(YAML::XS)
 BuildRequires: perl(namespace::clean)
+BuildRequires: perl(namespace::autoclean)
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
