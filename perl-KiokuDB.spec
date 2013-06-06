@@ -1,6 +1,5 @@
 %define upstream_name    KiokuDB
-%define upstream_version 0.50
-
+%define upstream_version 0.52
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version 0.52
 Release:	1
