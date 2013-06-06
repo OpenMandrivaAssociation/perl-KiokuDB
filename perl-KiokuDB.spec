@@ -1,15 +1,18 @@
 %define upstream_name    KiokuDB
-%define upstream_version 0.50
-
+%define upstream_version 0.52
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Version:	%perl_convert_version 0.52
+Release:	1
 
 Summary:	Common functionality for JSPON
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
+<<<<<<< HEAD
 Source0:	http://search.cpan.org/CPAN/authors/id/D/DO/DOY/%{upstream_name}-%{upstream_version}.tar.gz
+=======
+Source0:	http://www.cpan.org/modules/by-module/Term/DOY/KiokuDB-0.52.tar.gz
+>>>>>>> auto_update
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Cache::Ref)
@@ -94,3 +97,4 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 * Wed Jul 14 2010 cpan2dist 0.46-1mdv
 - initial mdv release, generated with cpan2dist
+
