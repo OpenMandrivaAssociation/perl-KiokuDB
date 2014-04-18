@@ -1,4 +1,5 @@
 removed_sources:
   KiokuDB-0.50.tar.gz: 49f11b26dee18da417d88b2c635b346432063b81
-sources:
   KiokuDB-0.52.tar.gz: 1c49ed7d86221ebcd29dc2a9a183ea833d1687b0
+sources:
+  KiokuDB-0.57.tar.gz: 2d86adc7f925bfeb738f0332fbdaa229a6a4e69a

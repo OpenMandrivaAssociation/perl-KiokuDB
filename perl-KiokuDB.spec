@@ -1,14 +1,15 @@
 %define upstream_name    KiokuDB
-%define upstream_version 0.52
+%define upstream_version 0.57
+
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version 0.52
+Version:	%perl_convert_version %{upstream_version}
 Release:	1
 
 Summary:	Common functionality for JSPON
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Term/DOY/KiokuDB-0.52.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Term/DOY/KiokuDB-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Cache::Ref)
@@ -43,6 +44,7 @@ BuildRequires:	perl(Try::Tiny)
 BuildRequires:	perl(YAML::XS)
 BuildRequires:	perl(namespace::clean)
 BuildRequires:	perl(namespace::autoclean)
+BuildRequires:	perl(Data::UUID)
 BuildArch:	noarch
 
 %description
@@ -72,25 +74,5 @@ perl Makefile.PL INSTALLDIRS=vendor
 %files
 %doc Changes META.yml
 %{_bindir}/*
-%{_mandir}/man3/*
+%{_mandir}/man?/*
 %{perl_vendorlib}/*
-
-%changelog
-* Sat Apr 23 2011 Funda Wang <fwang@mandriva.org> 0.500.0-2mdv2011.0
-+ Revision: 657123
-- fix br
-- rebuild for updated spec-helper
-
-* Wed Jan 05 2011 Guillaume Rousse <guillomovitch@mandriva.org> 0.500.0-1mdv2011.0
-+ Revision: 628783
-- update to new version 0.50
-
-* Sun Aug 01 2010 Shlomi Fish <shlomif@mandriva.org> 0.480.0-1mdv2011.0
-+ Revision: 564859
-- Updated to 0.48
-- import perl-KiokuDB
-
-
-* Wed Jul 14 2010 cpan2dist 0.46-1mdv
-- initial mdv release, generated with cpan2dist
-
